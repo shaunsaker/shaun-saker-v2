@@ -13,6 +13,7 @@ declare module 'styled-components' {
       lightGrey: string
       transBlack: string
       transWhite: string
+      white: string
     }
     rhythm: {
       sm: number
