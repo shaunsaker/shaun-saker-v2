@@ -19,7 +19,7 @@ export const App = () => {
 
           <TitleText>Hi, I'm Shaun Saker 👋</TitleText>
 
-          <DescriptionText>React 🤓 React-Native 🚀 Blockchain 🔥</DescriptionText>
+          <DescriptionText>React 🤓 React-Native 🚀 Blockchain + Web3 🔥</DescriptionText>
 
           <ContactLinks />
         </ContentContainer>
