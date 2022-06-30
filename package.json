@@ -27,7 +27,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "genicons": "npx @svgr/cli@5 --template tools/icons/svgr.template.js --typescript --memo --icon -d src/components/icons --svgo-config ./tools/icons/svgo.json --ignore-existing"
+    "genicons": "npx @svgr/cli@5 --template tools/icons/svgr.template.js --typescript --memo --icon -d src/components/icons --svgo-config ./tools/icons/svgo.json --ignore-existing",
+    "deploy": "yarn build && yarn firebase deploy"
   },
   "eslintConfig": {
     "extends": [
