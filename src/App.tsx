@@ -19,7 +19,17 @@ export const App = () => {
 
           <TitleText>Hi, I'm Shaun Saker 👋</TitleText>
 
-          <DescriptionText>Solving problems with code since 2016 😎</DescriptionText>
+          <DescriptionText>
+            I love building and automating for mobile, desktop and web.
+          </DescriptionText>
+
+          <SmallTextContainer>
+            <SmallText>⏳ Since 2016</SmallText>
+
+            <SmallText>👨‍💻 Typescript, React, React-Native</SmallText>
+
+            <SmallText>😍 Kids, cooking, running, gardening, exploring, music.</SmallText>
+          </SmallTextContainer>
 
           <ContactLinks />
         </ContentContainer>
@@ -49,7 +59,7 @@ const TitleText = styled.div`
   font-weight: 700;
   font-size: 48px;
   line-height: 64px;
-  color: ${({ theme }) => theme.colors.tertiary};
+  color: ${({ theme }) => theme.colors.white};
   margin: ${({ theme }) => theme.rhythm.md}px 0;
   text-align: center;
 `
@@ -59,7 +69,21 @@ const DescriptionText = styled.div`
   font-weight: 400;
   font-size: 18px;
   line-height: 32px;
-  color: ${({ theme }) => theme.colors.tertiary};
+  color: ${({ theme }) => theme.colors.white};
   margin-bottom: ${({ theme }) => theme.rhythm.md}px;
+  text-align: center;
+`
+
+const SmallTextContainer = styled.div`
+  margin-bottom: ${({ theme }) => theme.rhythm.md}px;
+`
+
+const SmallText = styled.div`
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: ${({ theme }) => theme.colors.white};
+  margin-bottom: ${({ theme }) => theme.rhythm.sm}px;
   text-align: center;
 `
