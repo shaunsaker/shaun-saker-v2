@@ -1,6 +1,4 @@
 import { createGlobalStyle } from 'styled-components'
-import '@fontsource/kalam'
-import '@fontsource/inter'
 
 export const GlobalStyles = createGlobalStyle`
   * {

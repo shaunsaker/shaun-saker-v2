@@ -7,5 +7,14 @@ declare module 'styled-components' {
       black100: string
       white100: string
     }
+    spacing: {
+      sm: number
+      md: number
+      lg: number
+    }
+    radius: {
+      md: number
+      lg: number
+    }
   }
 }
