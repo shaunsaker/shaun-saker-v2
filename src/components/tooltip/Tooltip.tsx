@@ -18,7 +18,7 @@ type TooltipProps = {
 export const Tooltip = ({ title, size, children, ...props }: TooltipProps): React.ReactElement => {
   return (
     <TooltipPrimitive.Provider>
-      <TooltipPrimitive.Root {...props}>
+      <TooltipPrimitive.Root delayDuration={0} {...props}>
         <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
 
         <TooltipPrimitive.Portal>
@@ -49,6 +49,7 @@ type StyledTooltipContentProps = {
 }
 
 const StyledTooltipContent = styled(TooltipPrimitive.Content)<StyledTooltipContentProps>`
+  box-shadow: ${({ theme }) => theme.shadows.md};
   background-color: ${({ theme }) => theme.colors.black100};
   ${({ size }) => sizeToCssMap[size]};
   border-radius: ${({ size, theme }) => theme.radius.lg}px;

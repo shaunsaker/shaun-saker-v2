@@ -1,8 +1,4 @@
-function template(
-  { template },
-  opts,
-  { imports, componentName, props, jsx, exports },
-) {
+function template({ template }, opts, { imports, componentName, props, jsx, exports }) {
   const newComponentName = {
     ...componentName,
     name: componentName.name.replace('Svg', ''),

@@ -4,6 +4,7 @@ declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
       gold: string
+      black50: string
       black100: string
       white100: string
     }
@@ -15,6 +16,15 @@ declare module 'styled-components' {
     radius: {
       md: number
       lg: number
+    }
+    shadows: {
+      md: string
+    }
+    transition: {
+      default: string
+    }
+    breakpoints: {
+      mobile: number
     }
   }
 }

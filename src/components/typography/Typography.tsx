@@ -11,6 +11,11 @@ const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
     line-height: 64px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+      font-size: 48px;
+      line-height: 48px;
+    }
   `,
   heading: css`
     font-family: Knewave;
