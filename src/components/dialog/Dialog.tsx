@@ -35,10 +35,14 @@ const StyledDialogOverlay = styled(DialogPrimitive.Overlay)`
   position: fixed;
   inset: 0;
   background-color: ${({ theme }) => theme.colors.black80};
-  padding: ${({ theme }) => theme.spacing.lg}px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: ${({ theme }) => theme.spacing.lg}px;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    padding: ${({ theme }) => theme.spacing.md}px;
+  }
 `
 
 const StyledDialogContent = styled(DialogPrimitive.Content)`
