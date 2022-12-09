@@ -2,10 +2,10 @@ import React, { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { IconButton } from '../../components/iconButton/IconButton'
+import { NerdIcon } from '../../components/icons/NerdIcon'
 import { CodeIcon } from '../../components/icons/CodeIcon'
 import { EnvelopeIcon } from '../../components/icons/EnvelopeIcon'
 import { GithubIcon } from '../../components/icons/GithubIcon'
-import { QuestionIcon } from '../../components/icons/QuestionIcon'
 import { Page } from '../../components/page/Page'
 import { Tooltip } from '../../components/tooltip/Tooltip'
 import { Constants } from '../../constants'
@@ -36,7 +36,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
               name="About"
             >
               <IconButton as="div">
-                <QuestionIcon />
+                <NerdIcon />
               </IconButton>
             </Link>
           </Tooltip>
