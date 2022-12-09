@@ -1,8 +1,41 @@
-import * as React from 'react'
+import React from 'react'
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Outlet,
+  Route,
+  RouterProvider,
+} from 'react-router-dom'
+import { About } from './pages/about/About'
 import { Home } from './pages/home/Home'
+import { Projects } from './pages/projects/Projects'
+
+export enum Routes {
+  home = '/',
+  about = '/about',
+  projects = '/projects',
+}
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route
+      path={Routes.home}
+      element={
+        <Home>
+          {/* parent paths need to render an Outlet in order to render child routes */}
+          <Outlet />
+        </Home>
+      }
+    >
+      <Route path={Routes.about} element={<About />} />
+
+      <Route path={Routes.projects} element={<Projects />} />
+    </Route>,
+  ),
+)
 
 interface RouterProps {}
 
 export const Router = ({}: RouterProps): React.ReactElement => {
-  return <Home />
+  return <RouterProvider router={router} />
 }

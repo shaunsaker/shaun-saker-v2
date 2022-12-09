@@ -1,4 +1,5 @@
-import * as React from 'react'
+import React, { ReactNode } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { IconButton } from '../../components/iconButton/IconButton'
 import { ArrowIcon } from '../../components/icons/ArrowIcon'
@@ -8,10 +9,13 @@ import { QuestionIcon } from '../../components/icons/QuestionIcon'
 import { Page } from '../../components/page/Page'
 import { Tooltip } from '../../components/tooltip/Tooltip'
 import Background from '../../images/background.png'
+import { Routes } from '../../Router'
 
-interface HomeProps {}
+interface HomeProps {
+  children: ReactNode
+}
 
-export const Home = ({}: HomeProps): React.ReactElement => {
+export const Home = ({ children }: HomeProps): React.ReactElement => {
   return (
     <Page>
       <BackgroundImage />
@@ -25,30 +29,46 @@ export const Home = ({}: HomeProps): React.ReactElement => {
 
         <FooterContainer>
           <Tooltip title="About" size="md">
-            <IconButton>
-              <QuestionIcon />
-            </IconButton>
+            <Link to={Routes.about}>
+              <IconButton>
+                <QuestionIcon />
+              </IconButton>
+            </Link>
           </Tooltip>
 
           <Tooltip title="Projects" size="md">
-            <IconButton>
-              <ArrowIcon />
-            </IconButton>
+            <Link to={Routes.projects}>
+              <IconButton>
+                <ArrowIcon />
+              </IconButton>
+            </Link>
           </Tooltip>
 
           <Tooltip title="Github" size="md">
-            <IconButton>
+            <IconButton
+              as="a"
+              href="https://github.com/shaunsaker"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GithubIcon />
             </IconButton>
           </Tooltip>
 
           <Tooltip title="Give me a shout" size="md">
-            <IconButton>
+            <IconButton
+              as="a"
+              href="mailto:sakershaun@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <EnvelopeIcon />
             </IconButton>
           </Tooltip>
         </FooterContainer>
       </ContentContainer>
+
+      {children}
     </Page>
   )
 }
