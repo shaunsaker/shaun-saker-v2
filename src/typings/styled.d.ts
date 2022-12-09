@@ -3,22 +3,33 @@ import 'styled-components'
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: {
-      primary: string
-      secondary: string
-      tertiary: string
-      accent: string
-      primaryText: string
-      secondaryText: string
-      grey: string
-      lightGrey: string
-      transBlack: string
-      transWhite: string
-      white: string
+      gold: string
+      black50: string
+      black80: string
+      black100: string
+      white20: string
+      white60: string
+      white100: string
     }
-    rhythm: {
+    spacing: {
+      xs: number
       sm: number
       md: number
       lg: number
+    }
+    radius: {
+      sm: number
+      md: number
+      lg: number
+    }
+    shadows: {
+      md: string
+    }
+    transition: {
+      default: string
+    }
+    breakpoints: {
+      mobile: number
     }
   }
 }
