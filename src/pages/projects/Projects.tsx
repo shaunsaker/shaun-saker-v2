@@ -106,7 +106,7 @@ export const Projects = (): React.ReactElement => {
           Before I started using a Macbook and discovered Shortcuts (Windows meh), I created a{' '}
           <LinkText href="https://github.com/shaunsaker/launchasaur">
             cross-platform Electron app
-          </LinkText>
+          </LinkText>{' '}
           that would allow me to trigger multiple open/close apps/files/links actions at once, e.g.
           Open Spotify, Open VSCode, Open Terminus, Open Calendar, Open Email in one action.
           <br />
@@ -146,7 +146,8 @@ export const Projects = (): React.ReactElement => {
 
         <Typography kind="paragraph">
           <LinkText href="https://github.com/shaunsaker/aisle-5-v2">A mobile app</LinkText> that
-          predicts your grocery usage the more you use it, no more shopping lists! WIP.
+          predicts your grocery usage the more you use it, no more shopping lists! Automatic grocery
+          ordering WIP.
           <br />
           <br />
           Tech used: Typescript, React-Native and Firebase.
