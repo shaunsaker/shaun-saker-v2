@@ -40,6 +40,10 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
+        I value simplicity, fun, transparency and ownership.
+      </ParagraphText>
+
+      <ParagraphText kind="paragraph">
         I like to have fun and don&apos;t take myself too seriously. When I&apos;m not coding,
         you&apos;ll find me with my kids, camping, going for a run, concocting something new in the
         kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
