@@ -21,13 +21,11 @@ export const Tooltip = ({ title, size, children, ...props }: TooltipProps): Reac
       <TooltipPrimitive.Root delayDuration={0} {...props}>
         <TooltipPrimitive.Trigger asChild>{children}</TooltipPrimitive.Trigger>
 
-        <TooltipPrimitive.Portal>
-          <StyledTooltipContent size={size}>
-            <Typography kind={mapSizeToTypographyKind[size]}>{title}</Typography>
+        <StyledTooltipContent size={size}>
+          <Typography kind={mapSizeToTypographyKind[size]}>{title}</Typography>
 
-            <StyledTooltipArrow />
-          </StyledTooltipContent>
-        </TooltipPrimitive.Portal>
+          <StyledTooltipArrow />
+        </StyledTooltipContent>
       </TooltipPrimitive.Root>
     </TooltipPrimitive.Provider>
   )

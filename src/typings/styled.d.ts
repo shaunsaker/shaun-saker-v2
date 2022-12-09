@@ -5,7 +5,10 @@ declare module 'styled-components' {
     colors: {
       gold: string
       black50: string
+      black80: string
       black100: string
+      white20: string
+      white60: string
       white100: string
     }
     spacing: {

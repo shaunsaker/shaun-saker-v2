@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { IconButton } from '../../components/iconButton/IconButton'
-import { ArrowIcon } from '../../components/icons/ArrowIcon'
+import { CodeIcon } from '../../components/icons/CodeIcon'
 import { EnvelopeIcon } from '../../components/icons/EnvelopeIcon'
 import { GithubIcon } from '../../components/icons/GithubIcon'
 import { QuestionIcon } from '../../components/icons/QuestionIcon'
@@ -39,7 +39,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
           <Tooltip title="Projects" size="md">
             <Link to={Routes.projects}>
               <IconButton>
-                <ArrowIcon />
+                <CodeIcon />
               </IconButton>
             </Link>
           </Tooltip>

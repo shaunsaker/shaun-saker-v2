@@ -6,7 +6,10 @@ export const theme: DefaultTheme = {
   colors: {
     gold: '#FEE048',
     black50: BLACK_50,
+    black80: 'rgba(1, 0, 9, 0.8)',
     black100: '#010009',
+    white20: 'rgba(255, 255, 255, 0.2)',
+    white60: 'rgba(255, 255, 255, 0.6)',
     white100: '#FFFFFF',
   },
   spacing: {

@@ -16,6 +16,8 @@ export enum Routes {
   projects = '/projects',
 }
 
+export const GO_BACK = -1
+
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route
