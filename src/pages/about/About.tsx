@@ -26,7 +26,7 @@ export const About = (): React.ReactElement => {
         I love to solve real world problems, automating and improving DX, mostly on the Frontend,
         where the magic happens (shots fired 😛) and have had the privilege of{' '}
         <Link to={Routes.projects}>building with really talented people</Link> in the rapid
-        prototyping space, blockchain, medical and SaaS industries.
+        prototyping space, blockchain, healthcare and SaaS industries.
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
