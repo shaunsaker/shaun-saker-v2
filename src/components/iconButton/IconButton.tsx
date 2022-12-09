@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const SIZE = 64
 
-export const IconButton = styled.button.attrs(() => ({ type: 'button' }))`
+export const IconButton = styled.button`
   cursor: pointer;
   width: ${SIZE}px;
   min-width: ${SIZE}px;

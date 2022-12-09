@@ -30,23 +30,37 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
 
         <FooterContainer>
           <Tooltip title="About" size="md">
-            <Link to={Routes.about}>
-              <IconButton>
+            <Link
+              to={Routes.about}
+              // @ts-expect-error Link types incorrect
+              name="About"
+            >
+              <IconButton as="div">
                 <QuestionIcon />
               </IconButton>
             </Link>
           </Tooltip>
 
           <Tooltip title="Projects" size="md">
-            <Link to={Routes.projects}>
-              <IconButton>
+            <Link
+              to={Routes.projects}
+              // @ts-expect-error Link types incorrect
+              name="Projects"
+            >
+              <IconButton as="div">
                 <CodeIcon />
               </IconButton>
             </Link>
           </Tooltip>
 
           <Tooltip title="Github" size="md">
-            <IconButton as="a" href={Constants.github} target="_blank" rel="noopener noreferrer">
+            <IconButton
+              as="a"
+              aria-label="Github"
+              href={Constants.github}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <GithubIcon />
             </IconButton>
           </Tooltip>
@@ -54,6 +68,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
           <Tooltip title="Give me a shout" size="md">
             <IconButton
               as="a"
+              aria-label="Email"
               href={`mailto:${Constants.email}`}
               target="_blank"
               rel="noopener noreferrer"
