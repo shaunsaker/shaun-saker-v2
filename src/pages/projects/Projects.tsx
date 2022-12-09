@@ -86,8 +86,9 @@ export const Projects = (): React.ReactElement => {
         <HeadingText kind="heading">Recycled Filament</HeadingText>
 
         <Typography kind="paragraph">
-          Before leaving South Africa, I took on an (overly) ambitious project, turning recyclable
-          plastic into 3D printer filament PLA. This was a huge project and involved a bit of
+          Before leaving South Africa, I took on an (overly) ambitious project, with the aim of
+          providing jobs to people living in the townships by collecting recyclable plastic and
+          turning it into 3D printer filament PLA. This was a huge project and involved a bit of
           everything, 3D design and printing, electronics, mechanical engineering and coding of
           course. I got as far as ordering all the parts and built the{' '}
           <LinkText href="https://www.thingiverse.com/thing:4845503">filament puller unit</LinkText>
@@ -133,8 +134,8 @@ export const Projects = (): React.ReactElement => {
 
         <Typography kind="paragraph">
           <LinkText href="https://github.com/shaunsaker/bloutand">An Electron app</LinkText> that
-          can scan for nearby BLE devices, connect/disconnect to them and read and display battery
-          level values from the connected device 🔵🦷
+          used the experimental Web Bluetooth api to scan for nearby BLE devices, connect/disconnect
+          to them and read and display battery level values from the connected device 🔵🦷
           <br />
           <br />
           Tech used: React, React-Native and Firebase.
@@ -161,8 +162,8 @@ export const Projects = (): React.ReactElement => {
           <LinkText href="https://github.com/shaunsaker/covid-19-south-africa-app">
             A mobile app
           </LinkText>{' '}
-          that provided automatically notified users of new COVID stats in South Africa (it was such
-          a hot topic back then 😉).
+          that automatically notified users of new COVID stats in South Africa (it was such a hot
+          topic back then 😅).
           <br />
           <br />
           Tech used: React-Native and Firebase.
