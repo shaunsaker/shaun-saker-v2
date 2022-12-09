@@ -72,6 +72,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
 const BackgroundImage = styled.div`
   position: fixed;
   inset: 0;
+  background-color: ${({ theme }) => theme.colors.black100};
   background-image: url(${Background});
   background-size: cover;
   background-position: center center;
