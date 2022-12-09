@@ -6,6 +6,7 @@ import { LinkText } from '../../components/typography/LinkText'
 import { Typography } from '../../components/typography/Typography'
 import { Constants } from '../../constants'
 import { GO_BACK, Routes } from '../../Router'
+import ShaunImage from '../../images/shaun.png'
 
 export const About = (): React.ReactElement => {
   const navigate = useNavigate()
@@ -16,6 +17,10 @@ export const About = (): React.ReactElement => {
 
   return (
     <Dialog title="About" open onOpenChange={onDialogClose}>
+      <ImageContainer>
+        <Image src={ShaunImage} alt="A photo of Shaun smiling and holding a beer" />
+      </ImageContainer>
+
       <ParagraphText kind="paragraph">
         Hi, I&apos;m Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
         <b>self-taught Frontend Developer</b> from <s>Cape Town, South Africa 🇿🇦</s> Queensland,
@@ -49,6 +54,17 @@ export const About = (): React.ReactElement => {
   )
 }
 
+const ImageContainer = styled.div`
+  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
+`
+
+const Image = styled.img`
+  width: 166px;
+  height: 240px;
+  border-radius: ${({ theme }) => theme.radius.lg}px;
+  border: 4px solid ${({ theme }) => theme.colors.white100};
+`
+
 const ParagraphText = styled(Typography)`
-  margin-bottom: ${({ theme }) => theme.spacing.md}px; ;
+  margin-bottom: ${({ theme }) => theme.spacing.md}px;
 `
