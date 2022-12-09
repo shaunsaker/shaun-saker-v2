@@ -36,13 +36,13 @@ export const About = (): React.ReactElement => {
 
       <ParagraphText kind="paragraph">
         I like to have fun and don&apos;t take myself too seriously. When I&apos;m not coding,
-        you&apos;ll find me with my kids, camping, concocting something new in the kitchen,
-        tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
+        you&apos;ll find me with my kids, camping, going for a run, concocting something new in the
+        kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
       </ParagraphText>
 
       <Typography kind="paragraph">
-        I&apos;m currently looking for a remote role on a smallish team, where I feel I can make the
-        most impact. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you
+        I&apos;m currently looking for a remote role on a smallish team that is doing something
+        meaningful. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you
         think we could work together 🙂
       </Typography>
     </Dialog>
