@@ -23,7 +23,6 @@ const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
     line-height: 32px;
     font-weight: 700;
     color: ${({ theme }) => theme.colors.white100};
-    margin-bottom: ${({ theme }) => theme.spacing.md}px;
   `,
   paragraph: css`
     font-family: Inter;
@@ -31,7 +30,6 @@ const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
     line-height: 24px;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.white100};
-    margin-bottom: ${({ theme }) => theme.spacing.md}px;
   `,
   small: css`
     font-family: Inter;
@@ -45,5 +43,9 @@ const kindToCssMap: Record<TypographyKind, ReturnType<typeof css>> = {
 export const Typography = styled.div<{
   kind: TypographyKind
 }>`
-  ${({ kind }) => kindToCssMap[kind]}
+  ${({ kind }) => kindToCssMap[kind]};
+
+  a {
+    color: ${({ theme }) => theme.colors.gold};
+  }
 `

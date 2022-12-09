@@ -8,6 +8,7 @@ import { GithubIcon } from '../../components/icons/GithubIcon'
 import { QuestionIcon } from '../../components/icons/QuestionIcon'
 import { Page } from '../../components/page/Page'
 import { Tooltip } from '../../components/tooltip/Tooltip'
+import { Constants } from '../../constants'
 import Background from '../../images/background.png'
 import { Routes } from '../../Router'
 
@@ -45,12 +46,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
           </Tooltip>
 
           <Tooltip title="Github" size="md">
-            <IconButton
-              as="a"
-              href="https://github.com/shaunsaker"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <IconButton as="a" href={Constants.github} target="_blank" rel="noopener noreferrer">
               <GithubIcon />
             </IconButton>
           </Tooltip>
@@ -58,7 +54,7 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
           <Tooltip title="Give me a shout" size="md">
             <IconButton
               as="a"
-              href="mailto:sakershaun@gmail.com"
+              href={`mailto:${Constants.email}`}
               target="_blank"
               rel="noopener noreferrer"
             >

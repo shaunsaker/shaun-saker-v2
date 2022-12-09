@@ -1,8 +1,11 @@
 import React, { useCallback } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
+import styled from 'styled-components'
 import { Dialog } from '../../components/dialog/Dialog'
+import { LinkText } from '../../components/typography/LinkText'
 import { Typography } from '../../components/typography/Typography'
-import { GO_BACK } from '../../Router'
+import { Constants } from '../../constants'
+import { GO_BACK, Routes } from '../../Router'
 
 interface AboutProps {}
 
@@ -15,30 +18,39 @@ export const About = ({}: AboutProps): React.ReactElement => {
 
   return (
     <Dialog title="About" open onOpenChange={onDialogClose}>
-      <Typography kind="paragraph">
-        Hi, I'm Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>, Frontend Developer
-        from <s>Cape Town, South Africa 🇿🇦</s> Queensland, Australia 🇦🇺
-      </Typography>
+      <ParagraphText kind="paragraph">
+        Hi, I'm Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
+        <b>self-taught Frontend Developer</b> from <s>Cape Town, South Africa 🇿🇦</s> Queensland,
+        Australia 🇦🇺
+      </ParagraphText>
 
-      <Typography kind="paragraph">
+      <ParagraphText kind="paragraph">
         I love to solve real world problems, automating and improving DX, mostly on the Frontend,
-        where the magic happens (shots fired 😛) and have had the privelege of building with really
-        talented people in the rapid prototyping space, blockchain and medical and SAAS industries.
-      </Typography>
+        where the magic happens (shots fired 😛) and have had the privilege of{' '}
+        <Link to={Routes.projects}>building with really talented people</Link> in the rapid
+        prototyping space, blockchain, medical and SaaS industries.
+      </ParagraphText>
+
+      <ParagraphText kind="paragraph">
+        My tools of choice are: React, React-Native, Typescript and Electron 😎 I also enjoy some
+        Solidity, hardhat and moralis 🤠
+      </ParagraphText>
+
+      <ParagraphText kind="paragraph">
+        I like to have fun and don't take myself too seriously. When I'm not coding, you'll find me
+        with my kids, camping, concocting something new in the kitchen, tinkering with 3D printing,
+        electronics or Dall-e (as pictured in the background).
+      </ParagraphText>
 
       <Typography kind="paragraph">
-        My tools of choice are: React, React-Native, Typescript and Electron 😎
-      </Typography>
-
-      <Typography kind="paragraph">
-        When I'm not coding, you'll find me with my kids, camping, concocting something new in the
-        kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
-      </Typography>
-
-      <Typography kind="paragraph">
-        I'm currently looking for a remote role on a smallish team (where I feel I can make the most
-        impact). Give me a shout if you think we could work together 🔥
+        I'm currently looking for a remote role on a smallish team, where I feel I can make the most
+        impact. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you think
+        we could work together 🙂
       </Typography>
     </Dialog>
   )
 }
+
+const ParagraphText = styled(Typography)`
+  margin-bottom: ${({ theme }) => theme.spacing.md}px; ;
+`
