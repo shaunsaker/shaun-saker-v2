@@ -31,7 +31,7 @@ export const About = (): React.ReactElement => {
 
       <ParagraphText kind="paragraph">
         My tools of choice are: React, React-Native, Typescript and Electron 😎 I also enjoy some
-        Solidity, hardhat and moralis 🤠
+        Solidity and web3 🤠
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
