@@ -18,7 +18,7 @@ export const Dialog = ({ title, children, ...props }: DialogProps): React.ReactE
             </StyledDialogTitle>
 
             <DialogPrimitive.Close asChild>
-              <IconButton>
+              <IconButton name="Close">
                 <CloseIcon />
               </IconButton>
             </DialogPrimitive.Close>
