@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
 import '@fontsource/knewave'
-import '@fontsource/inter'
+import '@fontsource/inter/700.css'
+import '@fontsource/inter/400.css'
 
 export type TypographyKind = 'title' | 'heading' | 'paragraph' | 'small'
 

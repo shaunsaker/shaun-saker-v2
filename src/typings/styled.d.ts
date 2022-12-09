@@ -12,11 +12,13 @@ declare module 'styled-components' {
       white100: string
     }
     spacing: {
+      xs: number
       sm: number
       md: number
       lg: number
     }
     radius: {
+      sm: number
       md: number
       lg: number
     }

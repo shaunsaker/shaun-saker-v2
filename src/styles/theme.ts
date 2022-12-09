@@ -13,11 +13,13 @@ export const theme: DefaultTheme = {
     white100: '#FFFFFF',
   },
   spacing: {
+    xs: 4,
     sm: 8,
     md: 16,
     lg: 32,
   },
   radius: {
+    sm: 4,
     md: 8,
     lg: 16,
   },

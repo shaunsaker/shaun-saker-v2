@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import styled from 'styled-components'
+import { Chip } from '../../components/chip/Chip'
 import { Typography } from '../../components/typography/Typography'
 
 interface ProjectProps {
@@ -13,12 +14,13 @@ export const Project = ({ title, description, skills }: ProjectProps): React.Rea
     <Container>
       <HeadingText kind="heading">{title}</HeadingText>
 
-      <Typography kind="paragraph">
-        {description}
-        <br />
-        <br />
-        Tech used: {skills.join(', ')}.
-      </Typography>
+      <Typography kind="paragraph">{description}</Typography>
+
+      <SkillsContainer>
+        {skills.map(skill => (
+          <Chip key={skill}>{skill}</Chip>
+        ))}
+      </SkillsContainer>
     </Container>
   )
 }
@@ -30,4 +32,10 @@ const Container = styled.section`
 
 const HeadingText = styled(Typography)`
   margin-bottom: ${({ theme }) => theme.spacing.md}px;
+`
+
+const SkillsContainer = styled.div`
+  margin-top: ${({ theme }) => theme.spacing.md}px;
+  display: flex;
+  gap: ${({ theme }) => theme.spacing.sm}px;
 `
