@@ -36,8 +36,6 @@ const router = createBrowserRouter(
   ),
 )
 
-interface RouterProps {}
-
-export const Router = ({}: RouterProps): React.ReactElement => {
+export const Router = (): React.ReactElement => {
   return <RouterProvider router={router} />
 }

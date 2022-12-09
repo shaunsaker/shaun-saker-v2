@@ -50,8 +50,8 @@ const StyledTooltipContent = styled(TooltipPrimitive.Content)<StyledTooltipConte
   box-shadow: ${({ theme }) => theme.shadows.md};
   background-color: ${({ theme }) => theme.colors.black100};
   ${({ size }) => sizeToCssMap[size]};
-  border-radius: ${({ size, theme }) => theme.radius.lg}px;
-  padding: ${({ size, theme }) => theme.spacing.md}px ${({ theme }) => theme.spacing.lg}px;
+  border-radius: ${({ theme }) => theme.radius.lg}px;
+  padding: ${({ theme }) => theme.spacing.md}px ${({ theme }) => theme.spacing.lg}px;
 `
 
 const StyledTooltipArrow = styled(TooltipPrimitive.Arrow)`

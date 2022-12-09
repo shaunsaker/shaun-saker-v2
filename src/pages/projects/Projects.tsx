@@ -7,9 +7,7 @@ import { Typography } from '../../components/typography/Typography'
 import { Constants } from '../../constants'
 import { GO_BACK } from '../../Router'
 
-interface ProjectsProps {}
-
-export const Projects = ({}: ProjectsProps): React.ReactElement => {
+export const Projects = (): React.ReactElement => {
   const navigate = useNavigate()
 
   const onDialogClose = useCallback(() => {
@@ -22,9 +20,9 @@ export const Projects = ({}: ProjectsProps): React.ReactElement => {
         <HeadingText kind="heading">Timeular</HeadingText>
 
         <Typography kind="paragraph">
-          For the past 3 years I've worked with a small team as a Frontend Developer to develop a
-          clever time-tracking solution, <LinkText href="http://timeular.com/">Timeular</LinkText>,
-          popular in the US and Germany.
+          For the past 3 years I&apos;ve worked with a small team as a Frontend Developer to develop
+          a clever time-tracking solution, <LinkText href="http://timeular.com/">Timeular</LinkText>
+          , popular in the US and Germany.
           <br />
           <br />
           Tech used: React, React-Native and Electron.
@@ -50,8 +48,8 @@ export const Projects = ({}: ProjectsProps): React.ReactElement => {
         <Typography kind="paragraph">
           One of my favourite{' '}
           <LinkText href="https://github.com/shaunsaker/dbl-web-app">personal projects</LinkText>, I
-          created a lottery on the Bitcoin blockchain (it's the TODO app of 2022 okay 😂). This was
-          a huge learning curve for me as it involved a lot of research into a very unknown
+          created a lottery on the Bitcoin blockchain (it&apos;s the TODO app of 2022 okay 😂). This
+          was a huge learning curve for me as it involved a lot of research into a very unknown
           territory. In the end, I discovered Ethereum Smart Contracts, which prompted me to
           complete a full course in{' '}
           <LinkText href="https://www.youtube.com/watch?v=gyMwXuJrbJQ">
@@ -74,7 +72,7 @@ export const Projects = ({}: ProjectsProps): React.ReactElement => {
           <LinkText href="https://github.com/shaunsaker/fat-buck-mobile-old">originally</LinkText>{' '}
           created to analyse stocks on the NYSE, JSE and Australian stock market using{' '}
           <LinkText href="https://www.investopedia.com/terms/b/bengraham.asp">
-            Benjamin Graham's value investing technique
+            Benjamin Graham&apos;s value investing technique
           </LinkText>
           . After realising that everything on the market was significantly overvalued, I pivoted to
           a crypto trading bot (naturally 😂). After a year of usage, I broke even lol.
@@ -122,8 +120,8 @@ export const Projects = ({}: ProjectsProps): React.ReactElement => {
 
         <Typography kind="paragraph">
           <LinkText href="https://github.com/shaunsaker/nou-braai">A mobile app</LinkText> that
-          connects to my home-made bluetooth temperature sensor (to be used in "braaing" aka cooking
-          on fire because yolo) 🔥
+          connects to my home-made bluetooth temperature sensor (to be used in &quot;braaing&quot;
+          aka cooking on fire because yolo) 🔥
           <br />
           <br />
           Tech used: Typescript, React-Native and Bluetooth.
@@ -175,7 +173,7 @@ export const Projects = ({}: ProjectsProps): React.ReactElement => {
 
         <Typography kind="paragraph">
           <LinkText href="https://github.com/shaunsaker/wine-me">A mobile app</LinkText> that helps
-          you to find the next best wine farm that you haven't visited, closest to you!
+          you to find the next best wine farm that you haven&apos;t visited, closest to you!
           <br />
           <br />
           Tech used: React-Native and Firebase.

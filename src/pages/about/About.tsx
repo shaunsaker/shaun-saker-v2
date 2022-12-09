@@ -7,9 +7,7 @@ import { Typography } from '../../components/typography/Typography'
 import { Constants } from '../../constants'
 import { GO_BACK, Routes } from '../../Router'
 
-interface AboutProps {}
-
-export const About = ({}: AboutProps): React.ReactElement => {
+export const About = (): React.ReactElement => {
   const navigate = useNavigate()
 
   const onDialogClose = useCallback(() => {
@@ -19,7 +17,7 @@ export const About = ({}: AboutProps): React.ReactElement => {
   return (
     <Dialog title="About" open onOpenChange={onDialogClose}>
       <ParagraphText kind="paragraph">
-        Hi, I'm Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
+        Hi, I&apos;m Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
         <b>self-taught Frontend Developer</b> from <s>Cape Town, South Africa 🇿🇦</s> Queensland,
         Australia 🇦🇺
       </ParagraphText>
@@ -37,15 +35,15 @@ export const About = ({}: AboutProps): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        I like to have fun and don't take myself too seriously. When I'm not coding, you'll find me
-        with my kids, camping, concocting something new in the kitchen, tinkering with 3D printing,
-        electronics or Dall-e (as pictured in the background).
+        I like to have fun and don&apos;t take myself too seriously. When I&apos;m not coding,
+        you&apos;ll find me with my kids, camping, concocting something new in the kitchen,
+        tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
       </ParagraphText>
 
       <Typography kind="paragraph">
-        I'm currently looking for a remote role on a smallish team, where I feel I can make the most
-        impact. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you think
-        we could work together 🙂
+        I&apos;m currently looking for a remote role on a smallish team, where I feel I can make the
+        most impact. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you
+        think we could work together 🙂
       </Typography>
     </Dialog>
   )
