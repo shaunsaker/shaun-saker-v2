@@ -37,5 +37,6 @@ const HeadingText = styled(Typography)`
 const SkillsContainer = styled.div`
   margin-top: ${({ theme }) => theme.spacing.md}px;
   display: flex;
+  flex-wrap: wrap;
   gap: ${({ theme }) => theme.spacing.sm}px;
 `
