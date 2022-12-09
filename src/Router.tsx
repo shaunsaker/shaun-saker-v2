@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-  createBrowserRouter,
+  createHashRouter,
   createRoutesFromElements,
   Outlet,
   Route,
@@ -18,7 +18,7 @@ export enum Routes {
 
 export const GO_BACK = -1
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route
       path={Routes.home}
