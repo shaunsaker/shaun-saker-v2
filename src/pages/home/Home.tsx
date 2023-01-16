@@ -11,6 +11,7 @@ import { Tooltip } from '../../components/tooltip/Tooltip'
 import { Constants } from '../../constants'
 import Background from '../../images/background.png'
 import { Routes } from '../../Router'
+import { LinkedInIcon } from '../../components/icons/LinkedInIcon'
 
 interface HomeProps {
   children: ReactNode
@@ -62,6 +63,18 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
               rel="noopener noreferrer"
             >
               <GithubIcon />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title="LinkedIn" size="md">
+            <IconButton
+              as="a"
+              aria-label="LinkedIn"
+              href={Constants.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
             </IconButton>
           </Tooltip>
 

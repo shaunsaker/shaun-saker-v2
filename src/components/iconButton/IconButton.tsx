@@ -1,13 +1,14 @@
 import styled from 'styled-components'
 
 const SIZE = 64
+const SMALL_SIZE = 48
 
 export const IconButton = styled.button`
   cursor: pointer;
   width: ${SIZE}px;
   min-width: ${SIZE}px;
   height: ${SIZE}px;
-  border-radius: ${SIZE / 2}px;
+  border-radius: 50%;
   border: 3px solid ${({ theme }) => theme.colors.white100};
   outline: none;
   box-shadow: ${({ theme }) => theme.shadows.md};
@@ -26,5 +27,12 @@ export const IconButton = styled.button`
 
   &:active {
     color: ${({ theme }) => theme.colors.gold};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    width: ${SMALL_SIZE}px;
+    min-width: ${SMALL_SIZE}px;
+    height: ${SMALL_SIZE}px;
+    font-size: 24px;
   }
 `
