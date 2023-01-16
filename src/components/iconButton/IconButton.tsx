@@ -29,7 +29,7 @@ export const IconButton = styled.button`
     color: ${({ theme }) => theme.colors.gold};
   }
 
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     width: ${SMALL_SIZE}px;
     min-width: ${SMALL_SIZE}px;
     height: ${SMALL_SIZE}px;

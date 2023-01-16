@@ -143,4 +143,8 @@ const FooterContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    gap: ${({ theme }) => theme.spacing.sm}px;
+  }
 `
