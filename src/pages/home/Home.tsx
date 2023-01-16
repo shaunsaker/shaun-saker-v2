@@ -12,6 +12,7 @@ import { Constants } from '../../constants'
 import Background from '../../images/background.png'
 import { Routes } from '../../Router'
 import { LinkedInIcon } from '../../components/icons/LinkedInIcon'
+import { FileIcon } from '../../components/icons/FileIcon'
 
 interface HomeProps {
   children: ReactNode
@@ -75,6 +76,18 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
               rel="noopener noreferrer"
             >
               <LinkedInIcon />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Resume" size="md">
+            <IconButton
+              as="a"
+              aria-label="Resume"
+              href={Constants.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileIcon />
             </IconButton>
           </Tooltip>
 
