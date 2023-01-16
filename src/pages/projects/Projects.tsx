@@ -21,10 +21,10 @@ export const Projects = (): React.ReactElement => {
         title="Timeular"
         description={
           <>
-            For the past 3 years I&apos;ve worked with a small team as a Frontend Developer to
-            develop a clever time-tracking solution,{' '}
-            <LinkText href="http://timeular.com/">Timeular</LinkText>, popular in the US and
-            Germany.
+            For 3 years, I worked in a small high-performance engineering team as a Frontend
+            Developer to develop a clever time-tracking solution,{' '}
+            <LinkText href="http://timeular.com/">Timeular</LinkText>, with over 80 000 users all
+            over the world. We improved and maintained a desktop, web and mobile app.
           </>
         }
         skills={['React', 'React-Native', 'Electron']}
@@ -36,9 +36,10 @@ export const Projects = (): React.ReactElement => {
         title="Scinapse"
         description={
           <>
-            For ~2 years, I was the lead engineer on a project for one of the biggest hospitals in
+            For ~2 years, I was the lead engineer on a project for the biggest hospital network in
             South Africa. At <LinkText href="https://aux.studio/">AUX Studio</LinkText>, we
-            developed a mobile and web app to help them go paperless at their sporting events.
+            digitised their logging of injuries, vitals, prescriptions and diagnoses at South
+            Africa&quot;s major sporting events.
           </>
         }
         skills={['React', 'React-Native', 'Firebase']}

@@ -28,10 +28,11 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        I love to solve real world problems, automating and improving DX, mostly on the Frontend,
-        where the magic happens (shots fired 😛) and have had the privilege of{' '}
-        <Link to={Routes.projects}>building with really talented people</Link> in the rapid
-        prototyping space, blockchain, healthcare and SaaS industries.
+        I love to solve real world problems, automating things and improving DX, mostly on the
+        Frontend, where the magic happens (shots fired 😛) and have had the privilege of{' '}
+        <Link to={Routes.projects}>building with really talented people</Link> from high-performance
+        engineering teams to agency in the rapid prototyping space, blockchain, healthcare and SaaS
+        industries.
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
