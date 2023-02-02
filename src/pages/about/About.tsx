@@ -64,8 +64,8 @@ const ImageContainer = styled.div`
 `
 
 const Image = styled.img`
-  width: 166px;
-  height: 240px;
+  width: 186px;
+  height: 186px;
   border-radius: ${({ theme }) => theme.radius.lg}px;
   border: 4px solid ${({ theme }) => theme.colors.white100};
 `
