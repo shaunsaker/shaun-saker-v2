@@ -23,8 +23,8 @@ export const About = (): React.ReactElement => {
 
       <ParagraphText kind="paragraph">
         Hi, I&apos;m Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
-        <b>self-taught Frontend Developer</b> from <s>Cape Town, South Africa 🇿🇦</s> Queensland,
-        Australia 🇦🇺
+        <b>self-taught Frontend Developer with over 7 years experience</b> from{' '}
+        <s>Cape Town, South Africa 🇿🇦</s> Queensland, Australia 🇦🇺
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
