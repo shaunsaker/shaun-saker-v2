@@ -49,12 +49,6 @@ export const About = (): React.ReactElement => {
         you&apos;ll find me with my kids, camping, going for a run, concocting something new in the
         kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
       </ParagraphText>
-
-      <Typography kind="paragraph">
-        I&apos;m currently looking for a remote role on a smallish team that is doing something
-        meaningful. <LinkText href={`mailto:${Constants.email}`}>Give me a shout</LinkText> if you
-        think we could work together 🙂
-      </Typography>
     </Dialog>
   )
 }
