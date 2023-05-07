@@ -26,6 +26,15 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
+        Growing up in South Africa has played an essential role in shaping who I am today. Being
+        born and raised in a culturally diverse and developing country has provided me with a unique
+        perspective on life. Through my experiences, I have learned invaluable lessons and skills
+        that have contributed significantly to my personal and professional growth, including:
+        adaptability, empathy, resourcefulness, resilience, the importance of community and an
+        awareness of global issues.
+      </ParagraphText>
+
+      <ParagraphText kind="paragraph">
         I love to solve real world problems, automating things and improving DX, mostly on the
         Frontend, where the magic happens (shots fired 😛) and have had the privilege of{' '}
         <Link to={Routes.projects}>building with really talented people</Link> from high-performance
