@@ -34,18 +34,23 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        My tools of choice are: React, React-Native, Typescript and Electron 😎 I also enjoy some
-        Solidity and web3 🤠
+        My tools of choice are: React, React-Native, Typescript 😎
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        I value simplicity, fun, transparency and ownership.
+        I value simplicity, async communication, practicality and fun.
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
         I like to have fun and don&apos;t take myself too seriously. When I&apos;m not coding,
-        you&apos;ll find me with my kids, camping, going for a run, concocting something new in the
-        kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured in the background).
+        you&apos;ll find me with my kids, camping, playing volleyball, going for a run, concocting
+        something new in the kitchen, tinkering with 3D printing, electronics or Dall-e (as pictured
+        in the background).
+      </ParagraphText>
+
+      <ParagraphText kind="paragraph">
+        I&apos;m currently looking for a remote role on a smallish, async team that is doing
+        something meaningful. Give me a shout if you think we could work together 🙂
       </ParagraphText>
     </Dialog>
   )

@@ -24,7 +24,8 @@ export const Projects = (): React.ReactElement => {
             For 3 years, I worked in a small high-performance engineering team as a Frontend
             Developer to develop a clever time-tracking solution,{' '}
             <LinkText href="http://timeular.com/">Timeular</LinkText>, with over 80 000 users all
-            over the world. We improved and maintained a desktop, web and mobile app.
+            over the world, shipping incrementally. We improved and maintained a desktop, web and
+            mobile app.
           </>
         }
         skills={['React', 'React-Native', 'Electron']}
