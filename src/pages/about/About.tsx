@@ -58,7 +58,7 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        I&apos;m currently looking for a remote role on a smallish, async team that is doing
+        I&apos;m currently looking for a remote role on a smallish, async-first team that is doing
         something meaningful. Give me a shout if you think we could work together 🙂
       </ParagraphText>
     </Dialog>
