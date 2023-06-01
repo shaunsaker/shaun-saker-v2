@@ -16,12 +16,12 @@ export const About = (): React.ReactElement => {
   return (
     <Dialog title="About" open onOpenChange={onDialogClose}>
       <ImageContainer>
-        <Image src={ShaunImage} alt="A photo of Shaun smiling and holding a beer" />
+        <Image src={ShaunImage} alt="A photo of Shaun" />
       </ImageContainer>
 
       <ParagraphText kind="paragraph">
         Hi, I&apos;m Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
-        <b>self-taught Frontend Developer with over 7 years experience</b> in{' '}
+        <b>self-taught Software Developer with over 7 years experience</b> in{' '}
         <s>Cape Town, South Africa 🇿🇦</s> Queensland, Australia 🇦🇺
       </ParagraphText>
 
@@ -35,15 +35,14 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        I love to solve real world problems, automating things and improving DX, mostly on the
-        Frontend, where the magic happens (shots fired 😛) and have had the privilege of{' '}
+        I love to solve real world problems with automation and AI and have had the privilege of{' '}
         <Link to={Routes.projects}>building with really talented people</Link> from high-performance
         engineering teams to agency in the rapid prototyping space, blockchain, healthcare and SaaS
         industries.
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        My tools of choice are: React, React-Native, Typescript 😎
+        My tools of choice are: React, React-Native, Typescript and of course ChatGPT 😎
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
