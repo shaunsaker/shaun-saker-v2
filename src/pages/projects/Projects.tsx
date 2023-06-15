@@ -5,14 +5,14 @@ import { Dialog } from '../../components/dialog/Dialog'
 import { LinkText } from '../../components/typography/LinkText'
 import { Typography } from '../../components/typography/Typography'
 import { Constants } from '../../constants'
-import { GO_BACK } from '../../Router'
+import { Routes } from '../../Router'
 import { Project } from './Project'
 
 export const Projects = (): React.ReactElement => {
   const navigate = useNavigate()
 
   const onDialogClose = useCallback(() => {
-    navigate(GO_BACK)
+    navigate(Routes.home)
   }, [navigate])
 
   return (
