@@ -11,6 +11,8 @@ import { Tooltip } from '../../components/tooltip/Tooltip'
 import { Constants } from '../../constants'
 import Background from '../../images/background.png'
 import { Routes } from '../../Router'
+import { LinkedInIcon } from '../../components/icons/LinkedInIcon'
+import { FileIcon } from '../../components/icons/FileIcon'
 
 interface HomeProps {
   children: ReactNode
@@ -62,6 +64,30 @@ export const Home = ({ children }: HomeProps): React.ReactElement => {
               rel="noopener noreferrer"
             >
               <GithubIcon />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title="LinkedIn" size="md">
+            <IconButton
+              as="a"
+              aria-label="LinkedIn"
+              href={Constants.linkedIn}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <LinkedInIcon />
+            </IconButton>
+          </Tooltip>
+
+          <Tooltip title="Resume" size="md">
+            <IconButton
+              as="a"
+              aria-label="Resume"
+              href={Constants.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FileIcon />
             </IconButton>
           </Tooltip>
 
@@ -117,4 +143,8 @@ const FooterContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
+    gap: ${({ theme }) => theme.spacing.sm}px;
+  }
 `

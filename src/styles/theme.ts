@@ -31,5 +31,6 @@ export const theme: DefaultTheme = {
   },
   breakpoints: {
     mobile: 425,
+    tablet: 768,
   },
 }
