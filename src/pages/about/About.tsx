@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Dialog } from '../../components/dialog/Dialog'
 import { Typography } from '../../components/typography/Typography'
 import { GO_BACK, Routes } from '../../Router'
-import ShaunImage from '../../images/shaun.png'
+import ShaunImage from '../../images/shaun.jpg'
 
 export const About = (): React.ReactElement => {
   const navigate = useNavigate()
