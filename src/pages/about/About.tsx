@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import { Dialog } from '../../components/dialog/Dialog'
 import { Typography } from '../../components/typography/Typography'
 import { GO_BACK, Routes } from '../../Router'
-import ShaunImage from '../../images/shaun.jpg'
+import ShaunImage from '../../images/shaun.jpeg'
 
 export const About = (): React.ReactElement => {
   const navigate = useNavigate()
@@ -42,7 +42,7 @@ export const About = (): React.ReactElement => {
       </ParagraphText>
 
       <ParagraphText kind="paragraph">
-        My tools of choice are: React, React-Native, Typescript and of course ChatGPT 😎
+        My tools of choice are: React, React-Native, Typescript and of course GPTs 😎
       </ParagraphText>
 
       <ParagraphText kind="paragraph">

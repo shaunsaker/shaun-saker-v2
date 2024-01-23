@@ -18,6 +18,22 @@ export const Projects = (): React.ReactElement => {
   return (
     <Dialog title="Projects" open onOpenChange={onDialogClose}>
       <Project
+        title="Cofoundly"
+        description={
+          <>
+            Founded <LinkText href="http://cofoundly.dev/">Cofoundly</LinkText>, your technical
+            cofounder as a service 🤓 At its heart is my brainchild since June 2023, henceforth
+            known as The Shell 😉 - its my secret sauce for whipping up a full-fledged web app,
+            complete with a high-converting landing page, backend and all the typical SaaS features
+            like billing and teams management, all within an hour.
+          </>
+        }
+        skills={['Typescript', 'React', 'Firebase']}
+      />
+
+      <Spacer />
+
+      <Project
         title="Timeular"
         description={
           <>
@@ -28,7 +44,7 @@ export const Projects = (): React.ReactElement => {
             mobile app.
           </>
         }
-        skills={['React', 'React-Native', 'Electron']}
+        skills={['Typescript', 'React', 'React-Native', 'Electron']}
       />
 
       <Spacer />
@@ -43,7 +59,7 @@ export const Projects = (): React.ReactElement => {
             Africa&quot;s major sporting events.
           </>
         }
-        skills={['React', 'React-Native', 'Firebase']}
+        skills={['Typescript', 'React', 'React-Native', 'Firebase']}
       />
 
       <Spacer />
