@@ -8,8 +8,8 @@ export const IconButton = styled.button`
   width: ${SIZE}px;
   min-width: ${SIZE}px;
   height: ${SIZE}px;
-  border-radius: 16px;
-  border: 2px solid ${({ theme }) => theme.colors.white100};
+  border-radius: 50%;
+  border: 3px solid ${({ theme }) => theme.colors.white100};
   outline: none;
   box-shadow: ${({ theme }) => theme.shadows.md};
   background-color: ${({ theme }) => theme.colors.black100};
