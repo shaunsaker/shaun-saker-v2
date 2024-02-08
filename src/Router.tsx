@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import {
   createHashRouter,
   createRoutesFromElements,
@@ -37,6 +37,6 @@ const router = createHashRouter(
   ),
 )
 
-export const Router = (): React.ReactElement => {
+export const Router = (): ReactElement => {
   return <RouterProvider router={router} />
 }

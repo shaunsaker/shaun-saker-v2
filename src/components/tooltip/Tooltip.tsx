@@ -1,11 +1,11 @@
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, ReactElement } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 import { TitleText } from '../titleText/TitleText'
 
 type Props = HTMLAttributes<HTMLDivElement>
 
-export const Tooltip = ({ className = '', title }: Props): React.ReactElement => {
+export const Tooltip = ({ className = '', title }: Props): ReactElement => {
   return (
     <div className={twMerge('flex flex-col items-center', className)}>
       <div className="rounded-lg bg-black p-4 shadow-lg">
