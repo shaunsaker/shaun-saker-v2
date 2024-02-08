@@ -34,7 +34,7 @@ export const Home = ({ children }: HomeProps): ReactElement => {
         <Tooltip className="mb-32" title="Ello Gov'na!" />
       </div>
 
-      <div className="absolute inset-x-0 bottom-0 flex items-center justify-center gap-4 p-4">
+      <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-center justify-center gap-2 p-4 md:gap-4">
         <IconButton onClick={() => navigate(Routes.about)}>
           <BookOpenIcon />
         </IconButton>
