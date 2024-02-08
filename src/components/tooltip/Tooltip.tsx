@@ -8,7 +8,7 @@ type Props = HTMLAttributes<HTMLDivElement>
 export const Tooltip = ({ className = '', title }: Props): ReactElement => {
   return (
     <div className={twMerge('flex flex-col items-center', className)}>
-      <div className="rounded-lg bg-black p-4 shadow-lg">
+      <div className="rounded-2xl bg-black py-4 px-6 shadow-2xl">
         <TitleText className="whitespace-nowrap text-center">{title}</TitleText>
       </div>
 
