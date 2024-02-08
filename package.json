@@ -42,7 +42,6 @@
     "lint:ts": "tsc",
     "lint": "npm-run-all --parallel lint:*",
     "start": "vite preview",
-    "build": "tsc && vite build",
-    "genicons": "npx @svgr/cli@5 --template tools/icons/svgr.template.js --typescript --memo --icon -d src/components/icons --svgo-config ./tools/icons/svgo.json --ignore-existing"
+    "build": "tsc && vite build"
   }
 }
