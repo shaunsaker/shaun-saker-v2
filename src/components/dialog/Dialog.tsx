@@ -1,3 +1,4 @@
+import { XMarkIcon } from '@heroicons/react/24/solid'
 import { AnimatePresence } from 'framer-motion'
 import React, { HTMLAttributes, ReactElement, useRef } from 'react'
 import { twMerge } from 'tailwind-merge'
@@ -5,7 +6,6 @@ import { twMerge } from 'tailwind-merge'
 import { useKeyPress } from '@/utils/useKeyPress/useKeyPress'
 
 import { IconButton } from '../iconButton/IconButton'
-import { CloseIcon } from '../icons/CloseIcon'
 import { TitleText } from '../titleText/TitleText'
 
 type DialogProps = { open?: boolean; onClose: () => void } & HTMLAttributes<HTMLDivElement>
@@ -42,7 +42,7 @@ export const Dialog = ({
               <TitleText>{title}</TitleText>
 
               <IconButton onClick={onClose}>
-                <CloseIcon />
+                <XMarkIcon />
               </IconButton>
             </div>
 
