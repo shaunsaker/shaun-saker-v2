@@ -1,19 +1,16 @@
 import React, { HTMLAttributes } from 'react'
-import styled from 'styled-components'
-import { Typography } from '../typography/Typography'
+import { twMerge } from 'tailwind-merge'
 
-type ChipProps = HTMLAttributes<HTMLDivElement>
+type Props = HTMLAttributes<HTMLDivElement>
 
-export const Chip = ({ children, ...props }: ChipProps): React.ReactElement => {
+export const Chip = ({ className = '', ...props }: Props): React.ReactElement => {
   return (
-    <Container {...props}>
-      <Typography kind="small">{children}</Typography>
-    </Container>
+    <div
+      className={twMerge(
+        'rounded-full bg-white/20 px-2 py-1 text-sm font-medium text-white',
+        className,
+      )}
+      {...props}
+    />
   )
 }
-
-const Container = styled.div`
-  border-radius: ${({ theme }) => theme.radius.sm}px;
-  background-color: ${({ theme }) => theme.colors.white20};
-  padding: ${({ theme }) => theme.spacing.xs}px ${({ theme }) => theme.spacing.sm}px;
-`

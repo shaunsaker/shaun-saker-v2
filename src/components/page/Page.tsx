@@ -1,10 +1,15 @@
-import styled from 'styled-components'
+import React, { ComponentPropsWithoutRef } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-export const Page = styled.div`
-  width: 100vw;
-  height: 100vh;
-  background-color: ${({ theme }) => theme.colors.black100};
-  position: relative;
-  display: flex;
-  flex-direction: column;
-`
+type Props = ComponentPropsWithoutRef<'div'>
+
+export const Page = ({ className = '', children, ...props }: Props) => {
+  return (
+    <div
+      className={twMerge('relative flex h-screen w-screen flex-col bg-black', className)}
+      {...props}
+    >
+      {children}
+    </div>
+  )
+}

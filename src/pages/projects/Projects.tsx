@@ -1,9 +1,10 @@
 import React, { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
-import styled from 'styled-components'
+
+import { LinkText } from '@/components/linkText/LinkText'
+import { ParagraphText } from '@/components/paragraphText/ParagraphText'
+
 import { Dialog } from '../../components/dialog/Dialog'
-import { LinkText } from '../../components/typography/LinkText'
-import { Typography } from '../../components/typography/Typography'
 import { Constants } from '../../constants'
 import { Routes } from '../../Router'
 import { Project } from './Project'
@@ -16,7 +17,7 @@ export const Projects = (): React.ReactElement => {
   }, [navigate])
 
   return (
-    <Dialog title="Projects" open onOpenChange={onDialogClose}>
+    <Dialog title="Projects" open onClose={onDialogClose}>
       <Project
         title="Cofoundly"
         description={
@@ -30,8 +31,6 @@ export const Projects = (): React.ReactElement => {
         }
         skills={['Typescript', 'React', 'Firebase']}
       />
-
-      <Spacer />
 
       <Project
         title="Timeular"
@@ -47,8 +46,6 @@ export const Projects = (): React.ReactElement => {
         skills={['Typescript', 'React', 'React-Native', 'Electron']}
       />
 
-      <Spacer />
-
       <Project
         title="Scinapse"
         description={
@@ -61,8 +58,6 @@ export const Projects = (): React.ReactElement => {
         }
         skills={['Typescript', 'React', 'React-Native', 'Firebase']}
       />
-
-      <Spacer />
 
       <Project
         title="Daily Bitcoin Lottery"
@@ -82,8 +77,6 @@ export const Projects = (): React.ReactElement => {
         }
         skills={['Typescript', 'React', 'React-Native', 'Firebase', 'BTC Blockchain']}
       />
-
-      <Spacer />
 
       <Project
         title="Fat Buck"
@@ -106,8 +99,6 @@ export const Projects = (): React.ReactElement => {
         skills={['Typescript', 'React', 'React-Native', 'Firebase', 'Python']}
       />
 
-      <Spacer />
-
       <Project
         title="Recycled Filament"
         description={
@@ -127,8 +118,6 @@ export const Projects = (): React.ReactElement => {
         skills={['Fusion 360', '3D Printing', 'Arduino']}
       />
 
-      <Spacer />
-
       <Project
         title="Launchasaur"
         description={
@@ -144,8 +133,6 @@ export const Projects = (): React.ReactElement => {
         skills={['Typescript', 'React', 'Electron', 'Firebase']}
       />
 
-      <Spacer />
-
       <Project
         title="Nou Braai"
         description={
@@ -157,8 +144,6 @@ export const Projects = (): React.ReactElement => {
         }
         skills={['Typescript', 'React', 'React-Native', 'Arduino', 'Bluetooth']}
       />
-
-      <Spacer />
 
       <Project
         title="Bloutand"
@@ -173,8 +158,6 @@ export const Projects = (): React.ReactElement => {
         skills={['React', 'React-Native', 'Firebase']}
       />
 
-      <Spacer />
-
       <Project
         title="Aisle 5"
         description={
@@ -186,8 +169,6 @@ export const Projects = (): React.ReactElement => {
         }
         skills={['Typescript', 'React', 'React-Native', 'Firebase']}
       />
-
-      <Spacer />
 
       <Project
         title="CVD19ZA"
@@ -203,8 +184,6 @@ export const Projects = (): React.ReactElement => {
         skills={['React', 'React-Native', 'Firebase']}
       />
 
-      <Spacer />
-
       <Project
         title="WineMe"
         description={
@@ -216,15 +195,9 @@ export const Projects = (): React.ReactElement => {
         skills={['React', 'React-Native', 'Firebase']}
       />
 
-      <Spacer />
-
-      <Typography kind="paragraph">
+      <ParagraphText>
         <LinkText href={Constants.github}>See more at my Github</LinkText>
-      </Typography>
+      </ParagraphText>
     </Dialog>
   )
 }
-
-const Spacer = styled.div`
-  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`

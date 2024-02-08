@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react'
-import styled from 'styled-components'
+
+import { HeadingText } from '@/components/headingText/HeadingText'
+import { ParagraphText } from '@/components/paragraphText/ParagraphText'
+
 import { Chip } from '../../components/chip/Chip'
-import { Typography } from '../../components/typography/Typography'
 
 interface ProjectProps {
   title: ReactNode
@@ -11,32 +13,16 @@ interface ProjectProps {
 
 export const Project = ({ title, description, skills }: ProjectProps): React.ReactElement => {
   return (
-    <Container>
-      <HeadingText kind="heading">{title}</HeadingText>
+    <div className="mb-4 border-b pb-8">
+      <HeadingText className="mb-4">{title}</HeadingText>
 
-      <Typography kind="paragraph">{description}</Typography>
+      <ParagraphText>{description}</ParagraphText>
 
-      <SkillsContainer>
+      <div className="mt-4 flex flex-wrap gap-2">
         {skills.map(skill => (
           <Chip key={skill}>{skill}</Chip>
         ))}
-      </SkillsContainer>
-    </Container>
+      </div>
+    </div>
   )
 }
-
-const Container = styled.section`
-  padding-bottom: ${({ theme }) => theme.spacing.md}px;
-  border-bottom: 1px solid ${({ theme }) => theme.colors.white20};
-`
-
-const HeadingText = styled(Typography)`
-  margin-bottom: ${({ theme }) => theme.spacing.md}px;
-`
-
-const SkillsContainer = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.md}px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: ${({ theme }) => theme.spacing.sm}px;
-`

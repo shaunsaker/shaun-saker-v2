@@ -1,75 +1,55 @@
-import React from 'react'
-import * as DialogPrimitive from '@radix-ui/react-dialog'
-import styled from 'styled-components'
-import { Typography } from '../typography/Typography'
-import { CloseIcon } from '../icons/CloseIcon'
+import { AnimatePresence } from 'framer-motion'
+import React, { HTMLAttributes, useRef } from 'react'
+import { twMerge } from 'tailwind-merge'
+
+import { useKeyPress } from '@/utils/useKeyPress/useKeyPress'
+
 import { IconButton } from '../iconButton/IconButton'
+import { CloseIcon } from '../icons/CloseIcon'
+import { TitleText } from '../titleText/TitleText'
 
-type DialogProps = { title: string } & DialogPrimitive.DialogProps
+type DialogProps = { open?: boolean; onClose: () => void } & HTMLAttributes<HTMLDivElement>
 
-export const Dialog = ({ title, children, ...props }: DialogProps): React.ReactElement => {
+export const Dialog = ({
+  className = '',
+  open,
+  title,
+  children,
+  onClose,
+  ...props
+}: DialogProps): React.ReactElement => {
+  const ref = useRef<HTMLDivElement>(null)
+
+  useKeyPress('Escape', () => {
+    if (open) {
+      onClose()
+    }
+  })
+
   return (
-    <DialogPrimitive.Root {...props}>
-      <StyledDialogOverlay>
-        <StyledDialogContent>
-          <HeaderContainer>
-            <StyledDialogTitle>
-              <Typography kind="title">{title}</Typography>
-            </StyledDialogTitle>
+    <AnimatePresence>
+      {open && (
+        <div
+          ref={ref}
+          className={twMerge(
+            'fixed inset-0 z-10 flex items-center justify-center bg-black/80 p-4 md:p-8',
+            className,
+          )}
+          {...props}
+        >
+          <div className="flex size-full max-w-xl flex-col rounded-2xl border-4 border-teal-400 bg-black p-4 shadow-lg md:p-8">
+            <div className="mb-8 flex items-center justify-between">
+              <TitleText>{title}</TitleText>
 
-            <DialogPrimitive.Close asChild>
-              <IconButton name="Close">
+              <IconButton onClick={onClose}>
                 <CloseIcon />
               </IconButton>
-            </DialogPrimitive.Close>
-          </HeaderContainer>
+            </div>
 
-          <ContentContainer>{children}</ContentContainer>
-        </StyledDialogContent>
-      </StyledDialogOverlay>
-    </DialogPrimitive.Root>
+            <div className="overflow-y-auto pr-4">{children}</div>
+          </div>
+        </div>
+      )}
+    </AnimatePresence>
   )
 }
-
-const StyledDialogOverlay = styled(DialogPrimitive.Overlay)`
-  position: fixed;
-  inset: 0;
-  background-color: ${({ theme }) => theme.colors.black80};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: ${({ theme }) => theme.spacing.lg}px;
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.mobile}px) {
-    padding: ${({ theme }) => theme.spacing.md}px;
-  }
-`
-
-const StyledDialogContent = styled(DialogPrimitive.Content)`
-  max-width: 560px;
-  width: 100%;
-  max-height: calc(100vh - ${({ theme }) => theme.spacing.lg}px);
-  height: 100%;
-  border-radius: ${({ theme }) => theme.radius.lg}px;
-  border: 4px solid ${({ theme }) => theme.colors.gold};
-  box-shadow: ${({ theme }) => theme.shadows.md};
-  background-color: ${({ theme }) => theme.colors.black100};
-  padding: ${({ theme }) => theme.spacing.lg}px;
-  display: flex;
-  flex-direction: column;
-`
-
-const HeaderContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: ${({ theme }) => theme.spacing.lg}px;
-`
-
-const StyledDialogTitle = styled(DialogPrimitive.Title)`
-  all: unset;
-`
-
-const ContentContainer = styled.div`
-  overflow-y: auto;
-`
