@@ -37,7 +37,7 @@ export const Dialog = ({
           )}
           {...props}
         >
-          <div className="flex size-full max-w-xl flex-col rounded-2xl border-4 border-teal-400 bg-black p-4 shadow-lg md:p-8">
+          <div className="flex size-full max-w-2xl flex-col rounded-2xl border-4 border-teal-400 bg-black p-4 shadow-lg md:p-8">
             <div className="mb-8 flex items-center justify-between">
               <TitleText>{title}</TitleText>
 
