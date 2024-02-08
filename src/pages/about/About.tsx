@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { Dialog } from '@/components/dialog/Dialog'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
-import ShaunImage from '@/images/shaun.jpeg'
+import ShaunImage from '@/images/shaun.png'
 import { GO_BACK, Routes } from '@/Router'
 
 export const About = (): ReactElement => {
