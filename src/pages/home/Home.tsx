@@ -1,20 +1,19 @@
 import React, { ReactNode } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { Routes, useNavigate } from 'react-router-dom'
 
+import { IconButton } from '@/components/iconButton/IconButton'
+import { CodeIcon } from '@/components/icons/CodeIcon'
+import { EnvelopeIcon } from '@/components/icons/EnvelopeIcon'
+import { FileIcon } from '@/components/icons/FileIcon'
+import { GithubIcon } from '@/components/icons/GithubIcon'
+import { LinkedInIcon } from '@/components/icons/LinkedInIcon'
+import { NerdIcon } from '@/components/icons/NerdIcon'
+import { Page } from '@/components/page/Page'
+import { Tooltip } from '@/components/tooltip/Tooltip'
+import { Constants } from '@/constants'
 import { useLink } from '@/utils/useLink/useLink'
 
-import { IconButton } from '../../components/iconButton/IconButton'
-import { CodeIcon } from '../../components/icons/CodeIcon'
-import { EnvelopeIcon } from '../../components/icons/EnvelopeIcon'
-import { FileIcon } from '../../components/icons/FileIcon'
-import { GithubIcon } from '../../components/icons/GithubIcon'
-import { LinkedInIcon } from '../../components/icons/LinkedInIcon'
-import { NerdIcon } from '../../components/icons/NerdIcon'
-import { Page } from '../../components/page/Page'
-import { Tooltip } from '../../components/tooltip/Tooltip'
-import { Constants } from '../../constants'
 import Background from '../../images/background.png'
-import { Routes } from '../../Router'
 
 interface HomeProps {
   children: ReactNode

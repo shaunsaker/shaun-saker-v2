@@ -1,12 +1,12 @@
 import React, { useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 
+import { Dialog } from '@/components/dialog/Dialog'
 import { LinkText } from '@/components/linkText/LinkText'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
+import { Constants } from '@/constants'
+import { Routes } from '@/Router'
 
-import { Dialog } from '../../components/dialog/Dialog'
-import { Constants } from '../../constants'
-import { Routes } from '../../Router'
 import { Project } from './Project'
 
 export const Projects = (): React.ReactElement => {

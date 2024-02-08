@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react'
 
+import { Chip } from '@/components/chip/Chip'
 import { HeadingText } from '@/components/headingText/HeadingText'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
-
-import { Chip } from '../../components/chip/Chip'
 
 interface ProjectProps {
   title: ReactNode
