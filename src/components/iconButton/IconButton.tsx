@@ -1,38 +1,16 @@
-import styled from 'styled-components'
+import React, { HTMLAttributes } from 'react'
+import { twMerge } from 'tailwind-merge'
 
-const SIZE = 64
-const SMALL_SIZE = 48
+type Props = HTMLAttributes<HTMLButtonElement>
 
-export const IconButton = styled.button`
-  cursor: pointer;
-  width: ${SIZE}px;
-  min-width: ${SIZE}px;
-  height: ${SIZE}px;
-  border-radius: 50%;
-  border: 3px solid ${({ theme }) => theme.colors.white100};
-  outline: none;
-  box-shadow: ${({ theme }) => theme.shadows.md};
-  background-color: ${({ theme }) => theme.colors.black100};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
-  color: ${({ theme }) => theme.colors.white100};
-  transition: ${({ theme }) => theme.transition.default};
-
-  &:hover,
-  &:focus-visible {
-    border-color: ${({ theme }) => theme.colors.gold};
-  }
-
-  &:active {
-    color: ${({ theme }) => theme.colors.gold};
-  }
-
-  @media (max-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-    width: ${SMALL_SIZE}px;
-    min-width: ${SMALL_SIZE}px;
-    height: ${SMALL_SIZE}px;
-    font-size: 24px;
-  }
-`
+export const IconButton = ({ className = '', ...props }: Props) => {
+  return (
+    <button
+      className={twMerge(
+        'flex h-8 w-8 items-center justify-center rounded-full border-2 border-white bg-black text-2xl text-white shadow-lg transition-colors hover:border-teal-400 hover:text-teal-400 focus-visible:outline-teal-400 active:text-teal-400 md:h-16 md:w-16 md:text-3xl',
+        className,
+      )}
+      {...props}
+    ></button>
+  )
+}
