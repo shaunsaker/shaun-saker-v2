@@ -1,9 +1,9 @@
-import React, { HTMLAttributes } from 'react'
+import React, { HTMLAttributes, ReactElement } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 type Props = HTMLAttributes<HTMLDivElement>
 
-export const Chip = ({ className = '', ...props }: Props): React.ReactElement => {
+export const Chip = ({ className = '', ...props }: Props): ReactElement => {
   return (
     <div
       className={twMerge(

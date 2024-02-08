@@ -1,5 +1,5 @@
-import React, { ReactNode } from 'react'
-import { Routes, useNavigate } from 'react-router-dom'
+import React, { ReactElement, ReactNode } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { IconButton } from '@/components/iconButton/IconButton'
 import { CodeIcon } from '@/components/icons/CodeIcon'
@@ -11,15 +11,15 @@ import { NerdIcon } from '@/components/icons/NerdIcon'
 import { Page } from '@/components/page/Page'
 import { Tooltip } from '@/components/tooltip/Tooltip'
 import { Constants } from '@/constants'
+import Background from '@/images/background.png'
+import { Routes } from '@/Router'
 import { useLink } from '@/utils/useLink/useLink'
-
-import Background from '../../images/background.png'
 
 interface HomeProps {
   children: ReactNode
 }
 
-export const Home = ({ children }: HomeProps): React.ReactElement => {
+export const Home = ({ children }: HomeProps): ReactElement => {
   const link = useLink()
   const navigate = useNavigate()
 

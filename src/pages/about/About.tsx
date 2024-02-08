@@ -1,13 +1,12 @@
-import React, { useCallback } from 'react'
+import React, { ReactElement, useCallback } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
 import { Dialog } from '@/components/dialog/Dialog'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
+import ShaunImage from '@/images/shaun.jpeg'
 import { GO_BACK, Routes } from '@/Router'
 
-import ShaunImage from '../../images/shaun.jpeg'
-
-export const About = (): React.ReactElement => {
+export const About = (): ReactElement => {
   const navigate = useNavigate()
 
   const onDialogClose = useCallback(() => {

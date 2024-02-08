@@ -1,5 +1,5 @@
 import { AnimatePresence } from 'framer-motion'
-import React, { HTMLAttributes, useRef } from 'react'
+import React, { HTMLAttributes, ReactElement, useRef } from 'react'
 import { twMerge } from 'tailwind-merge'
 
 import { useKeyPress } from '@/utils/useKeyPress/useKeyPress'
@@ -17,7 +17,7 @@ export const Dialog = ({
   children,
   onClose,
   ...props
-}: DialogProps): React.ReactElement => {
+}: DialogProps): ReactElement => {
   const ref = useRef<HTMLDivElement>(null)
 
   useKeyPress('Escape', () => {

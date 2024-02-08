@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react'
+import React, { ReactElement, ReactNode } from 'react'
 
 import { Chip } from '@/components/chip/Chip'
 import { HeadingText } from '@/components/headingText/HeadingText'
@@ -10,7 +10,7 @@ interface ProjectProps {
   skills: string[]
 }
 
-export const Project = ({ title, description, skills }: ProjectProps): React.ReactElement => {
+export const Project = ({ title, description, skills }: ProjectProps): ReactElement => {
   return (
     <div className="mb-4 border-b pb-8">
       <HeadingText className="mb-4">{title}</HeadingText>
