@@ -1,11 +1,11 @@
 import React, { useCallback } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 
+import { Dialog } from '@/components/dialog/Dialog'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
+import { GO_BACK, Routes } from '@/Router'
 
-import { Dialog } from '../../components/dialog/Dialog'
 import ShaunImage from '../../images/shaun.jpeg'
-import { GO_BACK, Routes } from '../../Router'
 
 export const About = (): React.ReactElement => {
   const navigate = useNavigate()
