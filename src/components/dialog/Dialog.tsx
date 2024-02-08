@@ -42,7 +42,7 @@ export const Dialog = ({
               <TitleText>{title}</TitleText>
 
               <IconButton onClick={onClose}>
-                <XMarkIcon />
+                <XMarkIcon className="size-12" />
               </IconButton>
             </div>
 
