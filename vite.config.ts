@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import million from 'million/compiler'
 import { defineConfig, loadEnv } from 'vite'
 import viteTsconfigPaths from 'vite-tsconfig-paths'
 
@@ -8,7 +9,7 @@ const config = ({ mode }) => {
   process.env = { ...process.env, ...loadEnv(mode, process.cwd()) }
 
   return defineConfig({
-    plugins: [viteTsconfigPaths(), react()],
+    plugins: [viteTsconfigPaths(), million.vite({ auto: true }), react()],
   })
 }
 
