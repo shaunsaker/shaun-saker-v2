@@ -4,7 +4,7 @@ const IS_DEVELOPMENT = import.meta.env.MODE === 'development'
 
 if (!IS_DEVELOPMENT) {
   mixpanel.init(import.meta.env.VITE_MIXPANEL_TOKEN || '', {
-    debug: true,
+    debug: false,
     track_pageview: true,
     persistence: 'localStorage',
   })

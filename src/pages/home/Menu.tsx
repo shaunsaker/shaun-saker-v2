@@ -57,7 +57,7 @@ export const Menu = () => {
         title="Github"
         className="text-5xl"
         onClick={() => {
-          trackAnalyticsEvent('menuItemClick', { menuItemId: 'github' })
+          trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Github' })
           link(Constants.github, '_blank')
         }}
       >
@@ -70,7 +70,7 @@ export const Menu = () => {
         title="LinkedIn"
         className="text-3xl"
         onClick={() => {
-          trackAnalyticsEvent('menuItemClick', { menuItemId: 'linkedin' })
+          trackAnalyticsEvent('Menu Item Click', { menuItemId: 'LinkedIn' })
           link(Constants.linkedIn, '_blank')
         }}
       >
@@ -82,7 +82,7 @@ export const Menu = () => {
       <IconButton
         title="Resume"
         onClick={() => {
-          trackAnalyticsEvent('menuItemClick', { menuItemId: 'resume' })
+          trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Resume' })
           link(Constants.resume, '_blank')
         }}
       >
@@ -92,7 +92,7 @@ export const Menu = () => {
       <IconButton
         title="Email"
         onClick={() => {
-          trackAnalyticsEvent('menuItemClick', { menuItemId: 'email' })
+          trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Email' })
           link(`mailto:${Constants.email}`, '_blank')
         }}
       >
