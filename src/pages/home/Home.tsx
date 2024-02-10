@@ -6,11 +6,11 @@ import Background from '@/images/background.png'
 
 import { Menu } from './Menu'
 
-interface HomeProps {
+type Props = {
   children: ReactNode
 }
 
-export const Home = ({ children }: HomeProps): ReactElement => {
+export const Home = ({ children }: Props): ReactElement => {
   return (
     <Page>
       <div
