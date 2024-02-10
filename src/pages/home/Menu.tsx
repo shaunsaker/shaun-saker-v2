@@ -45,17 +45,18 @@ export const Menu = () => {
       startAtAngle={180}
       radius={isSmallScreen ? 120 : 160}
     >
-      <IconButton title="About" onClick={() => navigate(Routes.about)}>
+      <IconButton title="About" aria-label="About" onClick={() => navigate(Routes.about)}>
         <BookOpenIcon />
       </IconButton>
 
-      <IconButton title="Projects" onClick={() => navigate(Routes.projects)}>
+      <IconButton title="Projects" aria-label="Projects" onClick={() => navigate(Routes.projects)}>
         <CommandLineIcon />
       </IconButton>
 
       <IconButton
-        title="Github"
         className="text-5xl"
+        title="Github"
+        aria-label="Github"
         onClick={() => {
           trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Github' })
           link(Constants.github, '_blank')
@@ -67,8 +68,9 @@ export const Menu = () => {
       </IconButton>
 
       <IconButton
-        title="LinkedIn"
         className="text-3xl"
+        title="LinkedIn"
+        aria-label="LinkedIn"
         onClick={() => {
           trackAnalyticsEvent('Menu Item Click', { menuItemId: 'LinkedIn' })
           link(Constants.linkedIn, '_blank')
@@ -81,6 +83,7 @@ export const Menu = () => {
 
       <IconButton
         title="Resume"
+        aria-label="Resume"
         onClick={() => {
           trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Resume' })
           link(Constants.resume, '_blank')
@@ -91,6 +94,7 @@ export const Menu = () => {
 
       <IconButton
         title="Email"
+        aria-label="Email"
         onClick={() => {
           trackAnalyticsEvent('Menu Item Click', { menuItemId: 'Email' })
           link(`mailto:${Constants.email}`, '_blank')
