@@ -14,7 +14,7 @@ export const IconButton = ({ className = '', title, children, ...props }: Props)
     >
       {children}
 
-      <span className="hidden sm:block text-xs font-medium">{title}</span>
+      {title && <span className="hidden sm:block text-xs font-medium">{title}</span>}
     </button>
   )
 }
