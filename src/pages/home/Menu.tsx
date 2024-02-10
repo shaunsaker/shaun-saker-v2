@@ -6,6 +6,7 @@ import {
   EnvelopeIcon,
   XMarkIcon,
 } from '@heroicons/react/24/solid'
+import { useWindowSize } from '@uidotdev/usehooks'
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
@@ -17,7 +18,10 @@ import { useKeyPress } from '@/utils/useKeyPress/useKeyPress'
 import { useLink } from '@/utils/useLink/useLink'
 
 export const Menu = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
+
+  const { width } = useWindowSize()
+  const isSmallScreen = width && width < 640
 
   const link = useLink()
   const navigate = useNavigate()
@@ -37,7 +41,8 @@ export const Menu = () => {
         </IconButton>
       }
       fanAngle={180}
-      radius={140}
+      startAtAngle={180}
+      radius={isSmallScreen ? 120 : 160}
     >
       <IconButton title="About" onClick={() => navigate(Routes.about)}>
         <BookOpenIcon />
