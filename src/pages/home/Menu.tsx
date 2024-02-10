@@ -37,7 +37,7 @@ export const Menu = () => {
     <MagicMenu
       open={open}
       trigger={
-        <IconButton className="relative z-10 " onClick={() => setOpen(!open)}>
+        <IconButton className="relative z-10" aria-label="Menu" onClick={() => setOpen(!open)}>
           {open ? <XMarkIcon /> : <Bars3Icon />}
         </IconButton>
       }
