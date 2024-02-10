@@ -2,7 +2,7 @@ import React, { ReactElement, ReactNode } from 'react'
 
 import { Page } from '@/components/page/Page'
 import { Tooltip } from '@/components/tooltip/Tooltip'
-import Background from '@/images/background.png'
+import Background from '@/images/background.webp'
 
 import { Menu } from './Menu'
 
