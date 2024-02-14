@@ -1,10 +1,10 @@
 import React, { ReactElement, useCallback } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 import { Dialog } from '@/components/dialog/Dialog'
 import { ParagraphText } from '@/components/paragraphText/ParagraphText'
 import ShaunImage from '@/images/shaun.webp'
-import { GO_BACK, Routes } from '@/Router'
+import { GO_BACK } from '@/Router'
 
 export const About = (): ReactElement => {
   const navigate = useNavigate()
@@ -23,45 +23,45 @@ export const About = (): ReactElement => {
 
       <div className="space-y-4">
         <ParagraphText>
-          Hi, I&apos;m Shaun 👋🏻 A <s>Geologist</s>, <s>Environmental Consultant</s>,{' '}
-          <b>self-taught Software Developer with over 7 years experience</b> in{' '}
-          <s>Cape Town, South Africa 🇿🇦</s> Queensland, Australia 🇦🇺
+          Hello 👋🏻 My name’s Shaun Saker and I’m a Product Engineer based in Brisbane, Australia 🇦🇺
         </ParagraphText>
 
         <ParagraphText>
-          Growing up in South Africa has played an essential role in shaping who I am today. Being
-          born and raised in a culturally diverse and developing country has provided me with a
-          unique perspective on life. Through my experiences, I have learned invaluable lessons and
-          skills that have contributed significantly to my personal and professional growth,
-          including: adaptability, empathy, resourcefulness, resilience, the importance of community
-          and an awareness of global issues.
+          I’m originally a qualified Geologist of all things and after spending years doing many
+          very manual and tedious processes, that I could automate, if only I knew how to code. So I
+          did just that and enrolled in Python course. I came back to the office, wrote a few
+          scripts and fell in love 😍
         </ParagraphText>
 
         <ParagraphText>
-          I love to solve real world problems with automation and AI and have had the privilege of{' '}
-          <Link to={Routes.projects}>building with really talented people</Link> from
-          high-performance engineering teams to agency in the rapid prototyping space, blockchain,
-          healthcare and SaaS industries.
+          It was then and there that I decided this is what I wanted to do next so I spent the next
+          6 months studying after hours, until I got my first job as a Web Developer in Cape Town 🤓
         </ParagraphText>
 
         <ParagraphText>
-          My tools of choice are: React, React-Native, Typescript and of course GPTs 😎
+          Fast forward almost 8 years later (wow), I’m now the Lead Frontend Engineer for a startup
+          called SAVI Surgical where we’re leveraging AI and ML in the Med-tech space. I’ve built
+          products in various other industries along the way including the productivity space with
+          my absolute favourite startup called Timeular based in Austria. During my time at the AUX
+          Studio in Cape Town, I got to do loads of rapid prototyping and I was the Lead Engineer on
+          a mobile project for one of the largest hospital networks in South Africa.
         </ParagraphText>
 
         <ParagraphText>
-          I value simplicity, async communication, practicality and fun.
+          I love to build amazing products that solve actual problems and I like to keep things
+          simple, practical and fun 🤩
         </ParagraphText>
 
         <ParagraphText>
-          I like to have fun and don&apos;t take myself too seriously. When I&apos;m not coding,
-          you&apos;ll find me with my kids, camping, playing volleyball, going for a run, concocting
-          something new in the kitchen, tinkering with 3D printing, electronics or Dall-e (as
-          pictured in the background).
+          That being said, when I’m not coding, I enjoy my daily runs, playing volleyball, being
+          outdoors as much as possible, cooking and experimenting in the kitchen and braai/BBQ, and
+          of course I love my amazing little family, I have a beautiful wife Astrid and beautiful 5
+          year old daughter Isla, who just started school, as well as the cutest 3 year old boy you
+          have ever seen, Cole ❤️
         </ParagraphText>
 
         <ParagraphText>
-          I&apos;m currently looking for a remote role on a smallish, async-first team that is doing
-          something meaningful. Give me a shout if you think we could work together 🙂
+          And that’s me in a nutshell. Thanks for stopping by! Cheers 👋🏻
         </ParagraphText>
       </div>
     </Dialog>

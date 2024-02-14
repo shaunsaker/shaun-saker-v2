@@ -139,10 +139,6 @@ export const PROJECTS: ProjectProps[] = [
         English link to missionaries that came to South Africa in the 1800s, namely Holloway
         Helmore's family who was later murdered by a tribe in Central Africa. There also happened to
         be links to English royalty, this all made me feel very posh 😂
-        <br />
-        <br />
-        This all culminated in a presentation given to my South African family who had come to visit
-        in Australia in Christmas of 2023.
       </>
     ),
     tags: ['Misc', 'Genealogy'],
