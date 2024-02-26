@@ -19,7 +19,7 @@ export const Project = ({ image, title, description, tags, href }: ProjectProps)
 
   return (
     <div className="mb-8 border-b pb-8 flex flex-col gap-y-4">
-      {image && <img src={image} alt={title} className="border-white rounded-lg border-4 w-full min-w-img-md min-h-img-md aspect-ratio-16/9" />}
+      {image && <img src={image} alt={title} className="border-white rounded-lg border-4 w-full min-h-32" />}
 
       <div className="flex items-center gap-x-4">
         <HeadingText>{title}</HeadingText>
