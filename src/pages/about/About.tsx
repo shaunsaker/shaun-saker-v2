@@ -16,7 +16,7 @@ export const About = (): ReactElement => {
   return (
     <Dialog title="About" open onClose={onDialogClose}>
       <img
-        className="border-white mb-8 rounded-lg border-4 min-w-img-md min-h-img-md aspect-ratio-16/9"
+        className="border-white mb-8 rounded-lg border-4 w-full max-w-64 min-h-32"
         src={ShaunImage}
         alt="A photo of Shaun smiling like he just did something remarkable but in reality is actually just standing in the garden while his wife photographs him"
       />
