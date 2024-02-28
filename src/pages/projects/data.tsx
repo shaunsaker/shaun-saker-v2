@@ -21,6 +21,7 @@ import NouBraai from '@/images/nou-braai.webp'
 import PatioRoof from '@/images/patio-roof.webp'
 import PixelsMinutes from '@/images/pixels-minutes.webp'
 import RecycledFilament from '@/images/recycled-filament.webp'
+import ShaunShaker from '@/images/shaun-shaker.webp'
 import SpiceChef from '@/images/spice-chef.webp'
 import SwingAndFling from '@/images/swing-and-fling.webp'
 import TheShell from '@/images/the-shell.webp'
@@ -427,5 +428,16 @@ export const PROJECTS: ProjectProps[] = [
     ),
     tags: ['Apps', 'Javascript', 'React', 'React-Native', 'Firebase'],
     href: 'https://github.com/shaunsaker/idea-me-app',
+  },
+  {
+    image: ShaunShaker,
+    title: 'Shaun Shaker',
+    description: (
+      <>
+        For 7 years I was also known by my stage name, "Shaun Shaker" (ultra cheesy I know 🤣) where I produced electronic house music and DJ'd at various major clubs in my hometown. Some of my tracks even made it onto national radio! Those were some of the best times and I plan to whip up a few sets here in Australia 🤠
+      </>
+    ),
+    tags: ['Music Production', 'DJing', 'Gyrating Profusely'],
+    href: 'https://soundcloud.com/shaun-shaker',
   },
 ]
