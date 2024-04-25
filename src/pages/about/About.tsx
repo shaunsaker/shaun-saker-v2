@@ -26,37 +26,43 @@ export const About = (): ReactElement => {
           Hello 👋🏻 My name’s Shaun and I’m a Product Engineer based in Brisbane, Australia 🇦🇺
           <br />
           <br />
-          Originally a qualified Geologist, I spent years working with very manual processes that I
-          knew I could automate if only I knew how to code. So I enrolled and completed a Python
-          course via the University of Michigan, returned to the office, wrote a few scripts and
-          fell in love 😍
+          TLDR: I pivoted from rocks to code 🚀
           <br />
           <br />
-          It was then and there that I decided that I wanted to code. I spent the next 6 months
-          studying with FreeCodeCamp after hours, until I got my first job as a Web Developer in
-          Cape Town 🤓
+          Early on in my career as a Geologist, I was buried under an avalanche of manual processes,
+          something was at fault, it was a bore and it wasn't very Gneiss 😉
           <br />
           <br />
-          Fast forward almost 8 years later, I’m currently the Lead Frontend Engineer at a startup
-          called SAVI Surgical, where we’re leveraging AI and ML in the Med-tech space. I’ve built
-          many products along the way and in wide array of industries including the productivity
-          space (with my absolute favourite startup called Timeular based in Austria 🇦🇹). During my
-          time at AUX Studio in Cape Town, I was lucky enough to do loads of rapid prototyping. I
-          was also the Lead Engineer on a mobile project for one of the largest hospital networks in
-          South Africa, Mediclinic.
-          <br />
-          <br />I love to build amazing products that solve actual problems and I like to keep
-          things simple, practical and fun 🤩
+          I knew there had to be a better way. So I taught myself how to code. All of a sudden I had
+          superpowers, automating processes left, right and center, with some staff not even knowing
+          what to do with their time anymore, I was the schist 😎
           <br />
           <br />
-          When I’m not coding, I enjoy my daily runs, playing volleyball, being outdoors as much as
-          possible, cooking and experimenting in the kitchen and braai/BBQ, and of course I love
-          spending time with my amazing little family. I have a beautiful wife Astrid (who is also a
-          creative) and beautiful 5 year old daughter Isla, who just started school, as well as the
-          cutest 3 year old boy you have ever seen, Cole ❤️
+          It wasn’t enough; I wanted more superpowers. So I spent the next 6 months studying coding
+          after hours, much to my wife and dog’s dismay - not only because I had less availability
+          but because they were forced to look at all the things I had built, “See how I just made
+          that text turn red!” 🤓
           <br />
           <br />
-          And that’s me in a nutshell. Thanks for stopping by! Cheers 👋🏻
+          But eventually I did it! I got my first job as a real live web developer, making websites
+          on the internet! Although even that wouldn’t quench my insatiable thirst for automation…
+          🤖
+          <br />
+          <br />
+          Shortly thereafter, during a chance encounter with my wife’s employer’s neighbour, I
+          discovered the many gross inefficiencies lurking in the medical industry. This encounter
+          led to me spearheading the development of a mobile app for one of South Africa’s largest
+          hospital networks, Mediclinic, which they used to replace paper at hundreds of sporting
+          events across the country, streamlining operations and saving the planet, #winning 🥇
+          <br />
+          <br />
+          My journey has been fuelled by a passion for automation and shaped by three guiding
+          principles: simplicity, practicality and fun, that I have brought to every endeavour. Fast
+          forward 8 years and many projects later, in the words of Pinocchio, I shout from the
+          rooftops, “I’m a real boy!” 🤣
+          <br />
+          <br />
+          Thanks for reading. I hope you enjoyed my Geology puns 😅
         </ParagraphText>
       </div>
     </Dialog>
